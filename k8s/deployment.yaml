@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: singTest
+  namespace: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: singtest
+  template:
+    metadata:
+      labels:
+        app: singtest
+    spec:
+      containers:
+        - name: singTest
+          image: docker.io/yourname/singtest:latest  # Replace with your real image
+          ports:
+            - containerPort: 8090
