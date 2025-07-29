@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: singTest-service
+  name: singtest-service
   namespace: test
 spec:
   selector:
