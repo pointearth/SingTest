@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: singTest-service
+  namespace: test
+spec:
+  selector:
+    app: singtest
+  ports:
+    - port: 80
+      targetPort: 8090
+  type: NodePort

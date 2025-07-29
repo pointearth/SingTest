@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: singTest
+  name: singtest
   namespace: test
 spec:
   replicas: 1
@@ -14,7 +14,7 @@ spec:
         app: singtest
     spec:
       containers:
-        - name: singTest
-          image: docker.io/yourname/singtest:latest  # Replace with your real image
+        - name: singtest
+          image: docker.io/muoubenben/singtest:latest  # Replace with your real image
           ports:
             - containerPort: 8090
