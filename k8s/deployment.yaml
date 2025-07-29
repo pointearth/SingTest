@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: singtest
-          image: docker.io/muoubenben/singtest:latest  # Replace with your real image
+          image: docker.io/muoubenben/omaservice:latest  # Replace with your real image
           ports:
             - containerPort: 8090
