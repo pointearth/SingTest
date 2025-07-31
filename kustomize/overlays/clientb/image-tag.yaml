@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: singtest
+spec:
+  template:
+    spec:
+      containers:
+        - name: singtest
+          image: muoubenben/singtest:0.2-clientb   # unique tag

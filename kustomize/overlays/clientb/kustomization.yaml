@@ -1,0 +1,22 @@
+# kustomize/overlays/clienta/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../common
+  - namespace.yaml
+namespace: singtest-clientb
+
+
+patches:
+  # Change the image tag
+  - target:
+      kind: Deployment
+      name: singtest                 # original name from base
+    path: image-tag.yaml             # sets muoubenben/singtest:0.0.1-clienta
+
+  # Inject CLIENT_ID=clienta
+  - target:
+      kind: Deployment
+      name: singtest
+    path: env-vars.yaml

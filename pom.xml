@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.cxm.singapore</groupId>
 	<artifactId>SingTest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.2.0-SNAPSHOT</version>
 	<name>SingTest</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -48,6 +48,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>singtest</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
